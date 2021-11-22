@@ -1,0 +1,975 @@
+html {
+    box-sizing:border-box;
+    background-image: url("https://assets.codepen.io/5010078/ambassador+mural+vintage.png");
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+    background-size: cover;
+    background-filter:opacity(10%);
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+
+@media( min-width:320px) {
+
+
+  .primary {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  top: 0px;
+  background-color: Black;
+
+  }
+  .tabs {
+    display: block;
+    flex-direction: column;
+
+
+  }
+  li { list-style-type: column;
+  display:inline-block;
+  margin: 2rem 1rem;
+  font-size: 20px;
+  left: 0px;
+  right: 25px
+  position: relative;
+  }
+
+
+  nav{
+    width: 50%;
+    background-color: black;
+   }
+
+  ul { margin: 0;
+      padding; 0;
+      display: flex;
+
+   }
+
+  body{ margin: 0;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: #F99C1C;
+    padding: 2rem;
+    font-family:  'Charm', cursive;
+
+   }
+
+
+  a:hover {
+  background-color: #511C0C;
+
+  }
+
+
+  h3{
+      font-family:  'Charm', cursive;
+      font-size: 25px;
+  }
+
+  .logo{
+      position:absolute;
+      left: 80px;
+      top: 20px;
+
+
+  }
+}
+
+
+.maincontainer {
+  position: relative;
+  width: 100vw;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px
+  box-sizing:border-box;
+}
+
+.primary {
+position: relative;
+width: 100%;
+height: 100px;
+top: 0px;
+background-color: Black;
+
+}
+
+.tabs {
+  display: block;
+  flex-direction: row;
+
+
+}
+
+li { list-style-type: none;
+display:inline-block;
+margin: 2rem 1rem;
+font-size: 30px;
+left: 700px;
+position: relative;
+}
+
+
+nav{
+  width: 100%;
+  background-color: black;
+ }
+
+ul { margin: 0;
+    padding; 0;
+    display: flex;
+
+ }
+
+body{ margin: 0;
+
+}
+
+a {
+  text-decoration: none;
+  color: #F99C1C;
+  padding: 2rem;
+  font-family:  'Charm', cursive;
+
+ }
+
+
+a:hover {
+background-color: #511C0C;
+
+}
+
+
+h3{
+    font-family:  'Charm', cursive;
+    font-size: 25px;
+}
+
+.logo{
+    position:absolute;
+    left: 80px;
+    top: 20px;
+
+
+}
+
+
+.back-image{
+  position: absolute;
+  top: 100px;
+right: 1px;
+
+
+
+}
+
+
+
+.welcome {
+  font-family: 'Charm', cursive;
+  font-size: 30px;
+  color: #F99C1C;
+  font-weight: bold;
+  text-align: center;
+  cursor:pointer;
+  left: 500px;
+  top: 410px;
+  position: absolute;
+  background-color: Black;
+  filter:opacity(80%);
+  width: 30%;
+height: 40%
+}
+
+#wrapperA{
+position: absolute;
+background-color: black;
+filter:opacity(80%);
+top: 760px;
+width: 80%;
+left: 150px;
+height: 15%;
+text-align: center;
+font-family: 'Charm', cursive;
+color: white;
+}
+
+
+.frame{
+    position: absolute;
+  background-color: black;
+  filter:opacity(95%);
+right: 200px;
+
+
+}
+#grid {
+  display: grid;
+  position: absolute;
+  top: 900px;
+  width: 80%;
+  grid-template-columns: .5fr .2fr ;
+  left: 150px;
+  right: 450px;
+  background-color: black;
+  filter:opacity(80%);
+}
+
+
+#item{
+  grid-column: 1;
+  grid-row: 1;
+  grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 30px;
+text-align: center;
+background-color: none;
+padding-top: 20px;
+}
+
+
+#itemA{
+  grid-column: 1;
+  grid-row: 2;
+  grid-column-end: 3;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: none;
+  font-size: 18px;
+  text-align: center;
+}
+#itemA1{
+background-color: none;
+grid-column: 1;
+grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 18px;
+padding-bottom: 1px;
+  text-align: center;
+}
+
+
+#itemA2 {
+background-color: none;
+grid-column: 1;
+grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 18px;
+  text-align: center;
+}
+
+#itemA3{
+background-color: none;
+grid-column: 1;
+grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 18px;
+  text-align: center;
+}
+
+#itemA4{
+  background-color: none;
+  grid-column: 1;
+  grid-column-end: 3;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 25px;
+    text-align: center;
+}
+
+#itemb{
+background-color: none;
+grid-column: 3;
+grid-row-start: 1;
+grid-row-end: 7;
+align-content: center;
+padding: 20px 20px 20px 20px;
+
+}
+
+
+
+
+#grid1{
+  display: grid;
+  position: absolute;
+  top: 900px;
+  width: 80%;
+  grid-template-columns:.3fr .3fr .3fr .3fr;
+  left: 150px;
+  right: 450px;
+  background-color: black;
+  filter:opacity(80%);
+height: 120%;
+
+}
+
+#tostada{
+  grid-column: 1;
+  grid-row: 1;
+  grid-column-end: 2;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 60px;
+padding-left: 30px;
+
+}
+
+#tprice{
+  grid-column: 2;
+  grid-row: 1;
+  grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 15px;
+text-align: left;
+background-color: none;
+padding-top: 20px;
+padding-left: 50px;
+}
+
+#BLT{
+  grid-column: 1;
+  grid-row: 2;
+  grid-column-end: 2;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 15px;
+padding-left: 30px;
+}
+
+#bltprice{
+  grid-column: 2;
+  grid-row: 2;
+  grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 15px;
+text-align: left;
+background-color: none;
+padding-top: 20px;
+padding-left: 50px;
+}
+
+#VEGETARIAN{
+  grid-column: 1;
+  grid-row: 3;
+  grid-column-end: 2;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 0px;
+padding-left: 30px;
+}
+
+#Vprice{
+  grid-column: 2;
+  grid-row: 3;
+  grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 15px;
+text-align: left;
+background-color: none;
+padding-top: 5px;
+padding-left: 50px
+
+}
+
+#greek{
+  grid-column: 1;
+  grid-row: 4;
+  grid-column-end: 2;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 15px;
+text-align: left;
+background-color: none;
+padding-top: 0px;
+padding-left: 30px;
+}
+
+#greekprice{
+  grid-column: 2;
+  grid-row: 4;
+  grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 15px;
+text-align: left;
+background-color: none;
+padding-top: 5px;
+padding-left: 50px
+}
+
+#GARLIC{
+  grid-column: 3;
+  grid-row: 4;
+  grid-column-end: 4;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 15px;
+padding-left: 30px;
+}
+#garlicprice{
+  grid-column: 4;
+  grid-row: 4;
+  grid-column-end: 4;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  background-color: none;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+
+#Lobster{
+  grid-column: 3;
+  grid-row: 1;
+  grid-column-end: 4;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 60px;
+padding-left: 30px;
+}
+
+
+#loprice{
+  grid-column: 4;
+  grid-row: 1;
+  grid-column-end: 4;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  background-color: none;
+  padding-top: 15px;
+  padding-left: 50px;
+}
+
+#PESTO{
+  grid-column: 3;
+  grid-row: 2;
+  grid-column-end: 4;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 0px;
+padding-left: 30px;
+}
+
+#Pprice{
+  grid-column: 4;
+  grid-row: 2;
+  grid-column-end: 4;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  background-color: none;
+  padding-top: 0px;
+  padding-left: 50px;
+}
+
+#QUESADILLA{
+  grid-column: 1;
+  grid-row: 5;
+  grid-column-end: 2;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 12px;
+  text-align: left;
+  background-color: none;
+  padding-top: 0px;
+  padding-left: 30px;
+
+}
+
+
+#Qprice{
+  grid-column: 2;
+  grid-row: 5;
+  grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 15px;
+text-align: left;
+background-color: none;
+padding-top: 5px;
+padding-left: 55px
+}
+
+#BBQ{
+  grid-column: 3;
+  grid-row: 3;
+  grid-column-end: 4;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 0px;
+padding-left: 30px;
+}
+
+#Bbqprice{
+  grid-column: 4;
+  grid-row: 3;
+  grid-column-end: 4;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  background-color: none;
+  padding-top: 0px;
+  padding-left: 50px;
+}
+
+#grid2{
+  display: grid;
+  position: absolute;
+  top: 1800px;
+  width: 80%;
+  grid-template-columns:1fr .3fr .3fr .3fr;
+  left: 150px;
+  right: 450px;
+  background-color: black;
+  filter:opacity(90%);
+
+}
+
+
+#Build{
+  grid-column: 1;
+  grid-row: 1;
+  grid-column-end: 5;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  background-color: none;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+#BASIC{
+  grid-column: 1;
+  grid-row: 2;
+  grid-column-end: 2;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 25px;
+padding-left: 30px;
+
+}
+
+
+
+
+#Basicprice{
+  grid-column: 2;
+  grid-row: 2;
+  grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 15px;
+text-align: left;
+background-color: none;
+padding-top: 25px;
+padding-left: 50px;
+}
+
+#Add{
+  grid-column: 1;
+  grid-row: 3;
+  grid-column-end: 2;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 25px;
+padding-left: 30px;
+
+}
+#Addprice{
+  grid-column: 2;
+  grid-row: 3;
+  grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 15px;
+text-align: left;
+background-color: none;
+padding-top: 30px;
+padding-left: 50px;
+}
+
+#Shrimp{
+  grid-column: 1;
+  grid-row: 4;
+  grid-column-end: 2;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 25px;
+padding-left: 30px;
+}
+
+#Shrimprice{
+  grid-column: 2;
+  grid-row: 4;
+  grid-column-end: 3;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 15px;
+text-align: left;
+background-color: none;
+padding-top: 30px;
+padding-left: 50px;
+}
+#Spinach{
+  grid-column: 1;
+  grid-row: 5;
+  grid-column-end: 2;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 25px;
+padding-left: 30px;
+}
+
+#SPiprice{
+    grid-column: 2;
+    grid-row: 5;
+    grid-column-end: 3;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  background-color: none;
+  padding-top: 30px;
+  padding-left: 50px;
+
+}
+
+#Feta{
+  grid-column: 1;
+  grid-row: 6;
+  grid-column-end: 2;
+font-family: 'Open Sans', sans-serif;
+color: white;
+font-size: 12px;
+text-align: left;
+background-color: none;
+padding-top: 25px;
+padding-left: 30px;
+}
+
+
+#Fprice{
+    grid-column: 2;
+    grid-row: 6;
+    grid-column-end: 3;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  background-color: none;
+  padding-top: 30px;
+  padding-left: 50px;
+
+}
+
+
+#Pizzafoto{
+  background-color: none;
+  grid-column: 4;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  align-content: center;
+  padding: 60px 90px 20px 20px;
+
+
+}
+#WrapperAB1{
+  position: absolute;
+  top: 950px;
+  width: 100%;
+  left: 230px;
+
+}
+
+#WrapperAB{
+  position: absolute;
+  top: 800px;
+  width: 80%;
+  left: 150px;
+  background-color: black;
+  filter:opacity(85%);
+  height: 100%;
+}
+
+
+
+#Wrapper01{
+  position: absolute;
+  top: 800px;
+  width: 80%;
+  left: 150px;
+  background-color: black;
+  filter:opacity(85%);
+  height: 80%;
+}
+
+.AB{
+  position: absolute;
+  font-family: 'Shippori Antique', sans-serif;
+color: white;
+left: 700px;
+right: 50px;
+top: 75px;
+}
+
+#Wrapper0{
+  position: absolute;
+  top: 900px;
+  width: 80%;
+  left: 200px;
+  right: 600px;
+}
+.HistoryAB{
+    position: absolute;
+    font-family: 'Shippori Antique', sans-serif;
+  color: white;
+  left: 650px;
+  right: 50px;
+  top: 60px;
+
+
+}
+
+#WrapperAC{
+  position: absolute;
+  top: 1600px;
+  width: 50%;
+  left: 400px;
+  background-color: black;
+  filter:opacity(85%);
+  height: 60%;
+  border-style: outset;
+  border-width: 5px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+#WrapperC{
+  position: absolute;
+  top: 1500px;
+  width: 50%;
+  left: 400px;
+  background-color: black;
+  filter:opacity(85%);
+  height: 40%;
+  border-style: outset;
+  border-width: 5px;
+  padding-left: 200px;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+#wrapper {
+position: absolute;
+top: 1300px;
+width: 80%;
+left: 150px;
+background-color: black;
+filter:opacity(95%);
+height: 80%;
+
+}
+
+.Update {
+  position: absolute;
+  font-family: 'Shippori Antique', sans-serif;
+color: white;
+align-items: right;
+padding-left: 700px;
+padding-right: 100px;
+top: 40px;
+}
+
+h2 {
+  font-family: 'Shippori Antique', sans-serif;
+  color: white;
+
+
+}
+
+p {
+  font-family: 'Shippori Antique', sans-serif;
+  color: white;
+
+
+}
+
+.update-photo {
+  position: absolute;
+  align-items: left;
+  padding-left: 100px;
+  padding-right: 500px;
+  top: 100px;
+  background-color: black;
+}
+
+#wrapper1{
+  position: absolute;
+  top: 1900px;
+  left: 150px;
+  background-color: black;
+  filter:opacity(90%);
+  width: 25%;
+  height: 50%;
+}
+
+.container{
+  position: absolute;
+  left: 10px;
+  right:  50px;
+}
+
+.Pizzalove{
+  position: absolute;
+  text-align: center;
+  left: 30px;
+  right:  0px;
+}
+
+
+.tostada-photo {
+  position: absolute;
+  padding-left: 0px;
+  padding-right: 100px;
+  top: 180px;
+
+}
+
+#wrapper2{
+  position: absolute;
+  top: 1900px;
+  width: 25%;
+  left: 565px;
+  background-color: black;
+  filter:opacity(90%);
+    height: 50%;
+}
+
+
+.Drinks{
+  position: absolute;
+  left: 20px;
+  right:  0px;
+  width: 100%;
+  height: 500%;
+  text-align: center;
+}
+
+.Drinks-photo{
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 0px;
+  top: 180px;
+align-items: center;
+}
+
+#wrapper3{
+  position: absolute;
+  top: 1900px;
+  width: 25%;
+  left: 980px;
+  background-color: black;
+  filter:opacity(90%);
+    height: 50%;
+}
+
+.Rainbow{
+  position: absolute;
+  left: 30px;
+  right:  0px;
+  width: 100%;
+  height: 500%;
+  text-align: center;
+}
+
+.rainbow-photo{
+  position: absolute;
+  padding-left: 0px;
+  padding-right: 50px;
+  top: 180px;
+align-items: center;
+}
+
+footer {
+  position: absolute;
+  display: block;
+  background-color: black;
+  filter:opacity(90%);
+  width: 100%;
+  top: 2500px;
+  height: 15%;
+  font-size: 20px;
+}
+
+.foot {
+  position: absolute;
+  align-items: center;
+left: 100px;
+}
+
+.phone{
+  position: absolute;
+  left: 600px;
+  width: 100%;
+}
+.Copyright{
+  position: absolute;
+  left: 950px;
+    width: 100%;
+  }
